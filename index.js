@@ -22,7 +22,7 @@ const path = require("path");
 	}
 	module.exports.readDir= function(path){
 		return new Promise(function(resolve, reject){
-			fs.readdir(path, (err, 'utf8', data) => {
+			fs.readdir(path, 'utf8',(err,  data) => {
 			  if (err){
 			  	reject(err);
 			  }
