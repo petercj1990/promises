@@ -6,7 +6,7 @@ const path = require("path");
 		return path.resolve(directoryPath, fileName);
 	}
 
-	function readFile(path){
+	module.exports.readFile = function(path){
 		return new Promise(function(resolve, reject){
 			fs.readFile(path, (err, data) => {
 			  if (err){
