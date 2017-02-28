@@ -13,7 +13,7 @@ const path = require("path");
 			  	reject(err);
 			  }
 			  else{
-			  	console.log(data);
+			  	//console.log(data);
 			  	resolve(data);
 			  }
 			  
@@ -27,7 +27,7 @@ const path = require("path");
 			  	reject(err);
 			  }
 			  else{
-			  	console.log(data);
+			  	//console.log(data);
 			  	resolve(data);
 			  }
 			  
