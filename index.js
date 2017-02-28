@@ -13,7 +13,7 @@ const path = require("path");
 			  	reject(err);
 			  }
 			  else{
-			  	//console.log(data);
+			  	//resolve.log(data);
 			  	resolve(data);
 			  }
 			  
@@ -22,7 +22,7 @@ const path = require("path");
 	}
 	module.exports.readDir= function(path){
 		return new Promise(function(resolve, reject){
-			fs.readdir(path, (err, data) => {
+			fs.readdir(path, (err, 'utf8', data) => {
 			  if (err){
 			  	reject(err);
 			  }
