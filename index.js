@@ -8,7 +8,7 @@ const path = require("path");
 
 	module.exports.readFile = function(path){
 		return new Promise(function(resolve, reject){
-			fs.readFile(path, (err, data) => {
+			fs.readFile(path, 'utf8',(err, data) => {
 			  if (err){
 			  	reject(err);
 			  }
